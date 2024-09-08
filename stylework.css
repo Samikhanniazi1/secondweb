@@ -1,0 +1,41 @@
+body
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.page
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1200px;
+    background-color: aqua;
+    border: 5px solid black;
+}
+#wait
+{
+    display: inline;
+    font-size: 60px;
+    margin: 0 400px -120px 400px ;
+}
+.circle
+{
+    height: 200px;
+    width: 200px;
+    margin:0 0 0 0;
+    border-radius: 50%;
+    border: 30px solid black;
+    border-top: 30px solid grey;
+    animation: spin 1.5s ease-in-out 1s infinite normal;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
